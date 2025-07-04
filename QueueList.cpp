@@ -1,5 +1,4 @@
-﻿// QueueList.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿
 #include "MyQueue.h"
 #include <iostream>
 using namespace std;
@@ -12,7 +11,7 @@ int main()
     MyQueue<int> queue;
 
     queue.pushBack(5);
-    queue.pushBack(3);
+    queue.pushBack(4);
     queue.pushBack(2);
     queue.pushBack(20);
 
@@ -22,7 +21,7 @@ int main()
 
     queue.show();
 
-    queue.popFront();
+   queue.popFront();
 
     cout << "Первый элемент: " << queue.getFront() << endl;
     cout << "Размер очереди: " << queue.getSize() << endl;
